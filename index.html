@@ -1,34 +1,210 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
+
+<head>
+    <meta charset="UTF-8">
     <meta name="description" content="Webzine">
     <title>Webzine</title>
-    </head>
-    <body>
-        <header>
-            <svg class="site-logo" width="60" height="60">
+</head>
+
+<body>
+    <header id="main-header">
+        <svg class="site-logo" width="60" height="60">
             <circle cx="30" cy="30" r="28"></circle>
             <rect x="18" y="18" width="24" height="24"></rect>
-            </svg>
-            <h1>Webzine Culture</h1>
-            <nav class="navbar">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="#hero-section">Accueil</a></li>
-                    <li class="nav-item"><a href="#latest-posts">Actualités</a></li>
-                    <li class="nav-item"><a href="#media-center">Podcast</a></li>
-                    <li class="nav-item"><a href="#main-footer">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main id="main-content">
-            <section id="hero-section">
-                <h2>Présentation et découverte</h2>
-                <p>Bienvenue sur <mark>ciné Actu</mark>, le webzine qui parle de <mark>cinéma</mark>, séries et des coulisses du grand écran.</p>
-                <p>Notre équipes de passionnées vous fait découvrir les films à ne pas manquer, ainsi que les <abbr title="Films en Haute Définiton">films HD.</abbr><br> Vous pouvez aussi écouter notre podcast pour prolonger la discussion.</p>
+        </svg>
+        <h1>Webzine Culture</h1>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#hero-section">Accueil</a></li>
+                <li class="nav-item"><a href="#latest-posts">Actualités</a></li>
+                <li class="nav-item"><a href="#media-center">Podcast</a></li>
+                <li class="nav-item"><a href="#main-footer">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-content">
+        <section id="hero-section">
+            <h2>Présentation et découverte</h2>
+            <p>Bienvenue sur <mark>ciné Actu</mark>, le webzine qui parle de <mark>cinéma</mark>, séries et des
+                coulisses du grand écran.</p>
+            <p>Notre équipes de passionnés vous fait découvrir les films à ne pas manquer, ainsi que les <abbr
+                    title="Films en Haute Définition">films HD.</abbr><br> Vous pouvez aussi écouter notre podcast pour
+                prolonger la discussion.</p>
+                <video class="promo-video" controls width="400">
+                    <source src="video.mp4" type="video/mp4">
+                    <track src="soustitres.vtt" kind="subtitles" srclang="fr" label="français"></track>
+                </video>
+        </section>
+        <section id="latest-posts">
+            <h2>Flux d'actualités</h2>
+            <article class="post-card">
+                <header>
+                    <h3>Les 10 films incontournables des années 90</h3>
+                    <time class="post-date" datetime="2026-11-18">18 novembre 2026</time>
+                </header>
+                <figure class="post-thumbnail">
+                    <img src="image1.jpg" alt="Affiche d'un film des années 90" width="300" height="200">
+                    <figcaption>Les classiques des années 90</figcaption>
+                    </figure>
+                <p>Retour sur les films qui ont marqué toute une génération.</p>
+                <footer>
+                    <ul>
+                        <li>classique</li>
+                        <li>Années 90</li>
+                        <li>Top 10</li>
+                    </ul>
+                    <a href="#">Lire la suite</a>
+                </footer>
+            </article>
+        <article class="post-card">
+            <header>
+                <h3>Les séries à voir en ce moment</h3>
+                <time class="post-date" datetime="2026-11-22">22 novembre 2026</time>
+            </header>
+            <figure class="post-thumbnail">
+                <img src="image2.jpg" alt="Affiche d'une série" width="300" height="200">
+                <figcaption>Les séries du moment</figcaption>
+            </figure>
+            <p>Notre sélection des séries à ne pas manquer.</p>
+                 <footer>
+                       <ul>
+                             <li>Séries</li>
+                             <li>Sélection</li>
+                             <li>Streaming</li>
+                        </ul>
+                       <a href="#">Lire la suite</a>
+                </footer>
+        </article>
+        <article class="post-card">
+            <header>
+                <h3>Les coulisses des grands tournages</h3>
+                    <time class="post-date" datetime="2026-11-23">23 novembre 2026</time>
+            </header>
+            <figure class="post-thumbnail">
+                <img src="image3.jpg" alt="Un plateau de tournage" width="300" height="200">
+                <figcaption>Sur le plateau</figcaption>
+            </figure>
+            <p>Découvrez ce qui se passe derrière la caméra.</p>
+                 <footer>
+                       <ul>
+                             <li>Coulisses</li>
+                             <li>Tournage</li>
+                             <li>Cinéma</li>
+                           </ul>
+                       <a href="#">Lire la suite</a>
+                     </footer>
+        </article>
+        <article class="post-card">
+            <header>
+                <h3>Les films d'animation qui ont marqué l'histoire</h3>
+                    <time class="post-date" datetime="2026-11-25">25 novembre 2026</time>
+            </header>
+            <figure class="post-thubnail">
+                <img src="image4.jpg" alt="Image d'un film d'animation" width="300" height="200">
+                <figcaption>Les grands classiques animés</figcaption>
+            </figure>
+            <p>Un tour d'horizon des films d'animation cultes.</p>
+                <footer>
+                       <ul>
+                             <li>Animation</li>
+                             <li>Culte</li>
+                             <li>Famille</li>
+                           </ul>
+                       <a href="#">Lire la suite</a>
+                </footer>
+        </article>
+        </section>
+        <section id="media-center">
+            <h2>Espace podcast et transcriptions</h2>
+            <audio class="podcast-player" controls>
+                <source src="podcast.mp3" type="audio/mpeg">
+                Votre navigateur ne supporte pas la lecture audio.
+            </audio>
+            <details>
+                <summary>Afficher la transcription</summary>
+                <dl class="transcript-box">
+                    <dt>Camille</dt>
+                    <dd>Bienveunue dans notre podcast Culture ! Aujourd'hui on parle des films des années 90</dd>
+                    <dt>Lucas</dt>
+                    <dd>Merci Camille. Pour moi cette décennie a vraiment changé le cinéma</dd>
+                    <dt>Ines</dt>
+                    <dd>Quel est ton film préféré de cette période ?</dd>
+                    <dt>Hugo</dt>
+                    <dd>Sans hésiter un grand classique, que je pourrais revoir dix fois</dd>
+                </dl>
+            </details>
+        </section>
+        <section id="authors-ranking">
+            <h2>Classement des rédacteurs</h2>
+            <table class="data-table">
+                <caption>Classement des rédacteurs du webzine</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Rang</th>
+                        <th scope="col">Rédacteur</th>
+                        <th scope="col">Spécialité</th>
+                        <th scope="col">Article publiés</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Camille Martin</td>
+                        <td>Cinéma</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Lucas Bernard</td>
+                        <td>Séries</td>
+                        <td>19</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Ines Dubois</td>
+                        <td>Musique</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Hugo Petit</td>
+                        <td>Animation</td>
+                        <td>11</td>
+                    </tr>
+                </tbody>
 
-            </section>
-
-        </main>
-    </body>
+            <tfoot>
+                <tr>
+                    <th scope="row" colspan="3">Total des articles publiés</th>
+                    <td>69</td>
+                </tr>
+            </tfoot>
+            </table>
+        </section>
+        <section id="interactive-zone">
+            <h2>Interactivité visuelle</h2>
+            <img src="plan.jpg" alt="Plan des locaux de webzine " width="400" height="300" usemap="#plan-webzine">
+            <map name="plan-webzine">
+                <area shape="rect" coords="20,20,180,120" href="#hero-section" alt="Salle de rédaction">
+                <area shape="circle" coords="300,150,50" href="#media-center" alt="Studio podcast">
+            </map>
+            <canvas class="stats-canvas" width="400" height="200"></canvas>  
+    </section>
+    </main>
+    <hr>
+    <footer id="main-footer">
+        <address class="Contact-info">
+            Webzine Culture<br>
+            12 rue des Arts, 45000 Orleans<br>
+            <a href="mailto:contact@webzine-culture.fr">contact@webzine-culture.fr</a> 
+        </address>
+        <ul>
+            <li><a href="#">Mentions Légales</a></li>
+            <li><a href="#">Plan du site</a></li>
+            <li><a href="#">Politique de confidentialité</a></li>
+        </ul>
+        <p><small class="copyright-text">2026-Tous droit réservés</small></p>
+    </footer>
+</body>
 </html>
