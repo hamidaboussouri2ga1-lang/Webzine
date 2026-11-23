@@ -144,12 +144,15 @@ h2::after{
 summary::marker{
     color: #50aef6;
 }
+tr, summary{
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
 .nav-item a{
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 .post-card:hover{
     transform: translateY(-5px);
-    box-shadow: Opx 8px 20px rgba(0, 0, 0, 18);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 18);
     transform: scale(1.05);
 }
 .post-thumbnail img{
@@ -160,7 +163,7 @@ img, video, canvas{
     max-width: 100%;
     height: auto;
 }
-@media screen and (max-widht:900px){
+@media screen and (max-width:900px){
     #main-content{
         padding: 0 20px;
     }
@@ -178,7 +181,7 @@ img, video, canvas{
     }
     .post-card{
         width: 100%;
-        margin: 15 px 0;
+        margin: 15px 0;
     }
     h1{
         font-size: 1.6rem;
